@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
-import { MyApp } from './app.component';
+import { MyFunctionsApp } from './app.component';
 
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { AboutPage } from '../pages/about/about';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 
@@ -12,19 +12,19 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HelloIonicPage,
+    MyFunctionsApp,
+    AboutPage,
     ItemDetailsPage,
     ListPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(MyFunctionsApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HelloIonicPage,
+    MyFunctionsApp,
+    AboutPage,
     ItemDetailsPage,
     ListPage
   ],

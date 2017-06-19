@@ -1,26 +1,21 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# My Functions
 
-## How to use this template
+## What is My Functions?
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+My Functions is a calculator app with which users can define unique functions like "Calculate My Car's MPG", "Pithagorean Theorem", etc.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## How to run
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTutorial tutorial
+Install ionic.
+```
+npm install -g ionic
 ```
 
-Then, to run it, cd into `myTutorial` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
+Then, serve.
+```
+ioninc serve
 ```
 
-Substitute ios for android if not on a Mac.
-
+Check from browser.
+- http://localhost:8100
+- http://localhost:8100/ionic-lab
