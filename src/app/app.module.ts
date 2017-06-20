@@ -4,8 +4,11 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyFunctionsApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
+import { CalculatePage } from '../pages/calculate/calculate';
 import { ListPage } from '../pages/list/list';
+import { TabsPage } from '../pages/tabs/tabs';
+import { AddPage } from '../pages/add/add';
+import { EditPage } from '../pages/edit/edit';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,8 +17,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyFunctionsApp,
     AboutPage,
-    ItemDetailsPage,
-    ListPage
+    CalculatePage,
+    AddPage,
+    EditPage,
+    ListPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,
@@ -25,13 +31,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyFunctionsApp,
     AboutPage,
-    ItemDetailsPage,
-    ListPage
+    CalculatePage,
+    AddPage,
+    EditPage,
+    ListPage,
+    TabsPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
-export class AppModule {}
+export class AppModule { }
